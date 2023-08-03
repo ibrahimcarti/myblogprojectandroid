@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsFeedActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goCreatePost"
+        app:contentPadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_margin="5dp"
+                android:src="@drawable/person_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView">
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@null"
+                android:text="Write Something Here"
+                android:layout_toRightOf="@+id/imageView">
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+
+
+        
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/postRecyclerView">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
